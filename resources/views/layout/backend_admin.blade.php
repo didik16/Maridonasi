@@ -3,15 +3,15 @@
 <head>
 	<title>MariDonasi.com - @yield('title')</title>
 	<meta name="viewport" content="width=device-width, initian-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/custom/style-footer.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/custom/style-header.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/backend_user/backend.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/custom/style-footer.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/custom/style-header.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/backend_user/backend.css') }}">
 	
 	<link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/icon/favicon.png') }}"/>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ secure_asset('assets/js/bootstrap.min.js') }}"></script>
 	<script src="https://kit.fontawesome.com/142f9408d2.js" crossorigin="anonymous"></script>
 	@yield('script')
 </head>
