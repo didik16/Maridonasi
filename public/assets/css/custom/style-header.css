@@ -1,0 +1,120 @@
+/*.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background:url("/assets/img/icon/loading.gif")50% 50% no-repeat rgb(249,249,249); 
+    opacity: .8;
+}*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  transition: all 2s;
+}
+.preloader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font: 14px arial;
+  transition: all 2s;
+}
+
+.nav-atas {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+} 
+
+.nav-atas li {
+    margin:5px;
+    color: white;
+} 
+
+.nav-atas a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+} 
+
+ul.garis li+li:before {
+	padding: 5px;
+    color: #53534b;
+    content: "|\00a0";
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 60px;
+  background: linear-gradient(45deg,#ffa638 0%, #ff5656 100%)!important;
+  border-bottom: 4px solid #9d363624;
+  animation: smoothScroll 0.5s forwards;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.tombol-n1{
+	background: linear-gradient(45deg,#eb6565 0%, #a33333 100%);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: -0.02em;
+}
+.tombol-n1:hover{
+	box-shadow: 0px 0px 24px 5px rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.nav-link a{
+	color: :white;
+}
+
+.nav-link :hover{
+	color: :blue!important;
+}
+
+/*.nav-item :hover{
+	background: #be414180!important;
+	transition: all 0.5s;
+}*/
+
+
+.input-head input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+  background-position: 10px 5px; 
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}

@@ -1,0 +1,102 @@
+.wrapper{
+   margin: 0 auto;
+  max-width: 26.875em;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+}
+
+.center{
+  text-align: center;
+  display: block;
+}
+
+.f2 {
+  font-weight: bold;
+  font-size: 18px;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0 10px;
+  display: inline-block;
+  color: #5d5d55;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+
+
+.register-login input[type='email'], 
+.register-login input[type='text'],
+.register-login input[type='password']
+{
+  height: 48px;
+  padding: 0 .75em;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.hover-text a:hover{
+  color: #ff6b4f;
+  text-decoration: none;
+}
+
+
+
+.register-login .btn {
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+
+.register-login .btn:hover {
+box-shadow: 0px 0px 24px 5px rgba(99, 85, 85, 0.3);
+
+}
+
+
+.register-login .btn-daftar{
+  background: linear-gradient(45deg,#ff5656 0%, #ffa638 100%)!important;
+}
+
+.register-login .btn-fb {
+  background:#3b5998;
+}
+
+.register-login .btn-google {
+  background:#e9e9e9;
+  color: black;
+}
+
+.line-thru {
+  display: block;
+  font-size: .875em;
+  margin-bottom: 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.line-thru:before {
+  height: 10px;
+  background-color: #f9f9f9;
+  content: '';
+  margin: -5px 0 0 -113px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+.line-thru:after {
+  border-bottom: 1px solid #dfe0e6;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49%;
+  width: 100%;
+  z-index: -2;
+}
+
