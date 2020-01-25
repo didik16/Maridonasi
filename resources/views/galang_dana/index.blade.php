@@ -24,9 +24,7 @@
     <div class="carousel-item <?php if($index_slide == 0){echo " active";}?>">
 
 
-<div class="box-img" style="background-repeat: no-repeat;background-position: center center;background-size: cover;padding-bottom: 40%;min-width: 100%;background-image: url( {{ secure_
-('
-s/img/galang_dana/'.$slide->gambar) }} );"></div>
+<div class="box-img" style="background-repeat: no-repeat;background-position: center center;background-size: cover;padding-bottom: 40%;min-width: 100%;background-image: url( {{ secure_asset('assets/img/galang_dana/'.$slide->gambar) }} );"></div>
 
       <div class="hitam-trans"></div>
       	<div class="carousel-caption d-none d-md-block">
@@ -58,7 +56,7 @@ s/img/galang_dana/'.$slide->gambar) }} );"></div>
 			<div class="col-4">
 				<div class="row">
 					<div class="col-4">
-						<img src="{{ asset('assets/img/icon/activities.svg') }}" alt="users" style="width: 100%; height: auto;" class="img-responsive pull-right">
+						<img src="{{ secure_asset('assets/img/icon/activities.svg') }}" alt="users" style="width: 100%; height: auto;" class="img-responsive pull-right">
 					</div>
 					<div class="col-8">
 						<ul>
@@ -71,7 +69,7 @@ s/img/galang_dana/'.$slide->gambar) }} );"></div>
 			<div class="col-4">
 				<div class="row">
 					<div class="col-4">
-						<img src="{{ asset('assets/img/icon/organizations.svg') }}" alt="organizations" style="width: 100%; height: auto;" class="img-responsive pull-right">
+						<img src="{{ secure_asset('assets/img/icon/organizations.svg') }}" alt="organizations" style="width: 100%; height: auto;" class="img-responsive pull-right">
 					</div>
 					<div class="col-8">
 						<ul>
@@ -84,7 +82,7 @@ s/img/galang_dana/'.$slide->gambar) }} );"></div>
 			<div class="col-4">
 				<div class="row">
 					<div class="col-4">
-						<img src="{{ asset('assets/img/icon/users.svg') }}" alt="activities" style="width: 100%; height: auto;" class="img-responsive pull-right">
+						<img src="{{ secure_asset('assets/img/icon/users.svg') }}" alt="activities" style="width: 100%; height: auto;" class="img-responsive pull-right">
 					</div>
 					<div class="col-8">
 						<ul>
@@ -204,17 +202,17 @@ s/img/galang_dana/'.$slide->gambar) }} );"></div>
 		<div class="sec-body">
 		    <div class="row justify-content-center" >
 		        <div class="col-md-4 col-sm-6 col-12 text-center" data-aos="fade-up">
-		            <img src="{{ asset('assets/img/icon/kenapa1.png') }}" alt="">
+		            <img src="{{ secure_asset('assets/img/icon/kenapa1.png') }}" alt="">
 		            <h4>Tepat Sasaran</h4>
 		            <p>Donasi yang terkumpul melalui Maridonasi.com akan disalurkan secara langsung ke rumah sakit atau ke keluarga pasien.</p>
 		        </div>
 		        <div class="col-md-4 col-sm-6 col-12 text-center" data-aos="fade-up" data-aos-delay="300">
-		            <img src="{{ asset('assets/img/icon/kenapa2.png') }}" alt="">
+		            <img src="{{ secure_asset('assets/img/icon/kenapa2.png') }}" alt="">
 		            <h4>Transparan</h4>
 		            <p>MariDonasi.com sangat transparan dalam mengelola keuangan. Setiap transaksi dan distribusi donasi dapat dilihat melalui halaman transparansi.</p>
 		        </div>
 		        <div class="col-md-4 col-sm-6 col-12 text-center" data-aos="fade-up" data-aos-delay="600">
-		            <img src="{{ asset('assets/img/icon/kenapa3.png') }}" alt="">
+		            <img src="{{ secure_asset('assets/img/icon/kenapa3.png') }}" alt="">
 		            <h4>Update Pasien</h4>
 		            <p>MariDonasi.com akan memberikan update mengenai keadaan pasien setelah menerima penanganan medis secara berkala kepada donatur.</p>
 		        </div>
