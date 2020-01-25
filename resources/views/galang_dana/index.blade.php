@@ -3,7 +3,7 @@
 
 @section('content')
 @section('script')
-<link rel="stylesheet" href="{{ asset('assets/css/custom/style-home.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/css/custom/style-home.css') }}">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 @endsection
@@ -24,7 +24,9 @@
     <div class="carousel-item <?php if($index_slide == 0){echo " active";}?>">
 
 
-<div class="box-img" style="background-repeat: no-repeat;background-position: center center;background-size: cover;padding-bottom: 40%;min-width: 100%;background-image: url( {{ asset('assets/img/galang_dana/'.$slide->gambar) }} );"></div>
+<div class="box-img" style="background-repeat: no-repeat;background-position: center center;background-size: cover;padding-bottom: 40%;min-width: 100%;background-image: url( {{ secure_
+('
+s/img/galang_dana/'.$slide->gambar) }} );"></div>
 
       <div class="hitam-trans"></div>
       	<div class="carousel-caption d-none d-md-block">
