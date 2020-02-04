@@ -24,6 +24,7 @@ class GalangDanaController extends Controller
 		$info_atas = DB::table('galang_dana')
 		->select(DB::raw('count( distinct galang_dana.id_galang_dana) as jumlah_galang_dana'),DB::raw('count( distinct donasi.id_user) as jumlah_donatur'),DB::raw('SUM(donasi.jumlah_dana) as total_dana_terkumpul' ))
 		->leftJoin('donasi', 'galang_dana.id_galang_dana', '=', 'donasi.id_galang_dana')
+        ->where('status','YES')
 		->get();
 
 
